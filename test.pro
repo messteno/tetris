@@ -15,10 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     tetrisitem.cpp \
-    tetrisitemsquare.cpp
+    tetrisitemsquare.cpp \
+    tetrisfield.cpp
 
 HEADERS  += mainwindow.h \
     tetrisitem.h \
-    tetrisitemsquare.h
+    tetrisitemsquare.h \
+    tetrisfield.h
 
 FORMS    += mainwindow.ui

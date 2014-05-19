@@ -3,12 +3,18 @@
 
 #include "tetrisitem.h"
 
+class TetrisField;
+
 class TetrisItemSquare : public TetrisItem
 {
+private:
+    static const int initialCells0[];
+    static const int initialCells90[];
+    static const int initialCells180[];
+    static const int initialCells270[];
 public:
-    TetrisItemSquare();
-    void draw(QPainter *painter);
-    bool check(int left, int top, int angle);
+    TetrisItemSquare(TetrisField *field);
+    void setAngle(int angle);
 };
 
 #endif // TETRISITEMSQUARE_H

@@ -8,6 +8,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    field_ = new TetrisField();
+    setCentralWidget(field_);
+    setFixedSize(200, 400);
 }
 
 MainWindow::~MainWindow()
